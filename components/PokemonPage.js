@@ -36,6 +36,7 @@ const PokemonPage = (props) => {
           size="large"
           total={props.limit}
           onChange={changePage}
+          pageSizeOptions={[10, 20, 50, 100, props.limit]}
         />
       </div>
     </div>

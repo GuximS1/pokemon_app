@@ -11,7 +11,7 @@ function PokemonCard(props) {
     <Card
       className={classes["cards"]}
       hoverable
-      style={{ width: 240 }}
+      style={{ width: 240, borderRadius: "15px", backgroundColor: "lightblue" }}
       // eslint-disable-next-line
       cover={<img alt="example" src={props.imgurl} />}
       onClick={() => {
