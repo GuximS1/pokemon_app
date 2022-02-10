@@ -57,7 +57,7 @@ function PokemonDetails() {
         {ability}
         <br />
       </p>
-      <div className={classes.gif}>
+      <div className={classes.gif} style={{ textAlign: "center" }}>
         <Image alt="gif" src={frontGif} height={100} width={100} />
         <Image alt="gif" src={backGif} height={100} width={100} />
         <Image alt="gif" src={frontShiny} height={100} width={100} />
