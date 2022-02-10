@@ -14,7 +14,7 @@ function SearchBar(props) {
 
   return (
     <Search
-      placeholder="search pokemons"
+      placeholder="Search pokemons"
       allowClear
       enterButton="Search"
       size="large"

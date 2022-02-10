@@ -1,6 +1,7 @@
 import React from "react";
 import { gql, useQuery } from "@apollo/client";
 import PokemonPage from "./PokemonPage";
+import Loading from "./Loading";
 const GET_POKEMONS = gql`
   query pokemons($limit: Int, $offset: Int) {
     pokemons(limit: $limit, offset: $offset) {
@@ -30,13 +31,11 @@ const Content = () => {
 
   if (loading)
     return (
-      <h1 style={{ color: "white", margin: "auto", textAlign: "center" }}>
-        Loading...
+      <h1 style={{ textAlign: "center", margin: "20px" }}>
+        <Loading />
       </h1>
     );
   if (error) return `Error! ${error.message}`;
-
-  //console.log("Response from server", data);
 
   return (
     <div>
