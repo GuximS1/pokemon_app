@@ -11,10 +11,14 @@ const Header = () => {
       </h1>
       <nav className={classes["slider-menu"]}>
         <Link href="/">
-          <a className={classes.link}>Home</a>
+          <a className={classes.link} style={{ textDecoration: "none" }}>
+            Home
+          </a>
         </Link>
         <Link href="/about">
-          <a className={classes.link}>About</a>
+          <a className={classes.link} style={{ textDecoration: "none" }}>
+            About
+          </a>
         </Link>
       </nav>
       <Link href="https://graphql-pokeapi.vercel.app/">
