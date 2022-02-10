@@ -27,7 +27,7 @@ function PokemonDetails() {
     data.sprites?.versions["generation-v"]["black-white"].animated.front_shiny;
   const backShiny =
     data.sprites?.versions["generation-v"]["black-white"].animated.back_shiny;
-  console.log(data);
+
   return (
     <div>
       <div className={classes.content}>
@@ -66,10 +66,34 @@ function PokemonDetails() {
           justifyContent: "center",
         }}
       >
-        <Image alt="gif" src={frontGif} height={100} width={100} />
-        <Image alt="gif" src={backGif} height={100} width={100} />
-        <Image alt="gif" src={frontShiny} height={100} width={100} />
-        <Image alt="gif" src={backShiny} height={100} width={100} />
+        <Image
+          alt="gif"
+          src={frontGif}
+          height={100}
+          width={100}
+          preview={false}
+        />
+        <Image
+          alt="gif"
+          src={backGif}
+          height={100}
+          width={100}
+          preview={false}
+        />
+        <Image
+          alt="gif"
+          src={frontShiny}
+          height={100}
+          width={100}
+          preview={false}
+        />
+        <Image
+          alt="gif"
+          src={backShiny}
+          height={100}
+          width={100}
+          preview={false}
+        />
       </div>
     </div>
   );
