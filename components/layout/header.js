@@ -11,12 +11,28 @@ const Header = () => {
       </h1>
       <nav className={classes["slider-menu"]}>
         <Link href="/">
-          <a className={classes.link} style={{ textDecoration: "none" }}>
+          <a
+            className={classes.link}
+            style={{
+              textDecoration: "none",
+              padding: "0px 20px",
+              fontSize: "1.5rem",
+              fontWeight: "bold",
+            }}
+          >
             Home
           </a>
         </Link>
         <Link href="/about">
-          <a className={classes.link} style={{ textDecoration: "none" }}>
+          <a
+            className={classes.link}
+            style={{
+              textDecoration: "none",
+              padding: "0px 20px",
+              fontSize: "1.5rem",
+              fontWeight: "bold",
+            }}
+          >
             About
           </a>
         </Link>
